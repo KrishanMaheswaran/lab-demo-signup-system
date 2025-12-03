@@ -1,0 +1,16 @@
+
+> lab3-krishanmaheswaran@1.0.0 start
+> node server/server.js
+
+Server running at http://localhost:3000
+SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+    at JSON.parse (<anonymous>)
+    at parse (/Users/krishan/Downloads/lab3-KrishanMaheswaran/node_modules/body-parser/lib/types/json.js:77:19)
+    at /Users/krishan/Downloads/lab3-KrishanMaheswaran/node_modules/body-parser/lib/read.js:123:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:213:14)
+    at invokeCallback (/Users/krishan/Downloads/lab3-KrishanMaheswaran/node_modules/raw-body/index.js:238:16)
+    at done (/Users/krishan/Downloads/lab3-KrishanMaheswaran/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/Users/krishan/Downloads/lab3-KrishanMaheswaran/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:508:28)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)

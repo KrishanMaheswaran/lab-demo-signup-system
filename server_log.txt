@@ -1,0 +1,8 @@
+
+> lab3-krishanmaheswaran@1.0.0 start
+> node server/server.js
+
+Server running at http://localhost:3000
+Login attempt for: admin
+User found. Hash: $2b$10$3EIJht4pIXhaIhyca0ch.OWJGKIV6YbRxBFv5W/8eF47HJeskNcxO
+Password match result: false

@@ -1,0 +1,24 @@
+# Node dependencies
+node_modules/
+
+# Runtime data to ignore
+server/data/
+client/img/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# macOS artifact
+.DS_Store
+
+# Front-end build output (Vite/React/etc.)
+dist/
+
+# Allow demo data files
+!server/data/users.json
+!server/data/db.json
+
+# AI prompts (not needed in repo)
+ai-prompts.txt

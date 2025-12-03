@@ -1,0 +1,30 @@
+{
+  "name": "lab3-krishanmaheswaran",
+  "version": "1.0.0",
+  "description": "Lab 3 REST API and front-end for sign-up sheets.",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "keywords": [],
+  "author": "Krishan Maheswaran",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.13.2",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.2"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Western-Webtech/lab3-KrishanMaheswaran.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Western-Webtech/lab3-KrishanMaheswaran/issues"
+  },
+  "homepage": "https://github.com/Western-Webtech/lab3-KrishanMaheswaran#readme"
+}

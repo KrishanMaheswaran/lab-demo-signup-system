@@ -1,0 +1,20 @@
+[
+    {
+        "username": "admin",
+        "hash": "$2b$10$Leo3osdqgzCDr1/bEaomMuoUtXUHgUFLaWHbHh7M3vNqgNuDGM2nS",
+        "role": "admin",
+        "mustChange": false
+    },
+    {
+        "username": "ta1",
+        "hash": "$2b$10$Leo3osdqgzCDr1/bEaomMuoUtXUHgUFLaWHbHh7M3vNqgNuDGM2nS",
+        "role": "ta",
+        "mustChange": false
+    },
+    {
+        "username": "student1",
+        "hash": "$2b$10$Leo3osdqgzCDr1/bEaomMuoUtXUHgUFLaWHbHh7M3vNqgNuDGM2nS",
+        "role": "student",
+        "mustChange": true
+    }
+]
