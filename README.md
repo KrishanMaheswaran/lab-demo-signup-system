@@ -1,56 +1,107 @@
 Lab Demo Signup System
 
-This project is a full-stack web application for managing lab demo signups and scheduling.
-It is organized into two main parts:
+A full-stack web application for managing lab demo scheduling, time-slot reservations, and user signups. Built with a clean separation between front-end and back-end components, this system demonstrates real-world skills in API design, data handling, and interactive UI development.
+
+🚀 Features
+
+User-friendly interface for selecting demo time slots
+
+Dynamic schedule display with availability tracking
+
+Real-time updates via REST API
+
+Server-side data management using structured JSON
+
+Modular architecture (clean separation of client/server)
+
+Custom endpoints created using Node.js
+
+Expandable front-end (vanilla JS or framework-based)
 
 📁 Project Structure
-client/ — Front-End
+lab-demo-signup-system/
+│
+├── client/                # Front-end (UI + JS + CSS + assets)
+│   ├── index.html
+│   ├── lab3.js
+│   ├── css/
+│   └── img/
+│
+├── server/                # Back-end (API logic)
+│   ├── server.js
+│   └── data/              # Server-side assets (ignored by Git)
+│
+└── ai-prompts.txt         # Logged prompts if AI assistance was used
 
-Contains all UI and client-side logic.
+🖥️ Front-End
 
-index.html — main entry page
+All UI logic and visual components live in the client/ folder:
 
-lab3.js / framework files — front-end JavaScript
+HTML structure (index.html)
 
-css/ — stylesheets
+CSS stylesheets
 
-img/ — front-end images and assets
+JavaScript logic (lab3.js)
 
-Additional framework code for the enhanced version of the project
+Images & front-end assets
 
-All front-end assets should remain inside the client folder.
+Any front-end framework components (Lab 4 additions)
 
-server/ — Back-End
+🔌 Back-End (REST API)
 
-Contains all server-side logic and REST API endpoints.
-
-server.js — main server file (REST API implementation)
-
-data/ — server assets (ignored by Git; copy manually on deployment)
-
-🔌 Back-End API
-
-Your API logic should be implemented in:
+All API routes and server functionality are implemented in:
 
 server/server.js
 
 
-This file handles routes, data access, and any required server functionality.
+The backend handles:
 
-⚙️ Front-End Framework
+Signup data
 
-For the framework version of the project, place all front-end components inside:
+GET/POST requests
 
-client/
+Validation
 
+Dynamic slot updates
 
-This includes pages, components, static assets, and JS logic.
+Data persistence via JSON files (stored in server/data/)
+
+🛠️ Running the Project
+Install dependencies
+npm install
+
+Start the server
+node server/server.js
+
+Open the front-end
+
+Open:
+
+client/index.html
 
 🤖 AI Usage Log
 
-If any AI tools were used during development, record prompts in:
+If AI tools were used during development, prompts are recorded in:
 
 ai-prompts.txt
 
 
-This file should reflect the commit history that produced related code changes.
+This file mirrors the commit history related to AI-assisted changes.
+
+🌟 Why This Project Stands Out
+
+This application showcases real software engineering capabilities:
+
+Full-stack project structure
+
+REST API creation and integration
+
+Client–server communication
+
+Front-end dynamic behavior
+
+Data handling and validation
+
+Clean architecture and organization
+
+Deployment-ready file structure
