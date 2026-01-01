@@ -1,107 +1,132 @@
-Lab Demo Signup System
+# Lab Demo Signup System
 
-A full-stack web application for managing lab demo scheduling, time-slot reservations, and user signups. Built with a clean separation between front-end and back-end components, this system demonstrates real-world skills in API design, data handling, and interactive UI development.
+A full-stack scheduling application for managing lab demo signups and time-slot reservations.  
+Designed with clean client–server separation and RESTful APIs to simulate a real-world booking system.
 
-🚀 Features
+---
 
-User-friendly interface for selecting demo time slots
+## Overview
 
-Dynamic schedule display with availability tracking
+This application allows users to view available demo time slots, reserve a slot, and receive immediate feedback on availability.  
+It emphasizes **API design, server-side validation, and reliable state management**.
 
-Real-time updates via REST API
+The system mirrors common scheduling and reservation workflows used in production applications.
 
-Server-side data management using structured JSON
+---
 
-Modular architecture (clean separation of client/server)
+## Key Features
 
-Custom endpoints created using Node.js
+- Interactive time-slot selection
+- Dynamic availability tracking
+- RESTful API communication
+- Server-side validation to prevent double booking
+- JSON-based data persistence
+- Modular client–server architecture
+- Easily extensible frontend
 
-Expandable front-end (vanilla JS or framework-based)
+---
 
-📁 Project Structure
+## Tech Stack
+
+- **Backend:** Node.js
+- **Frontend:** HTML, CSS, JavaScript
+- **API Style:** REST (GET / POST)
+- **Data Storage:** Structured JSON files
+- **Tooling:** Git
+
+---
+
+## Project Structure
+
+```
+
 lab-demo-signup-system/
+├── client/
+│   ├── index.html        # Frontend UI
+│   ├── lab3.js           # Client-side logic
+│   ├── css/              # Stylesheets
+│   └── img/              # Assets
 │
-├── client/                # Front-end (UI + JS + CSS + assets)
-│   ├── index.html
-│   ├── lab3.js
-│   ├── css/
-│   └── img/
+├── server/
+│   ├── server.js         # REST API and business logic
+│   └── data/             # Server-side data storage
 │
-├── server/                # Back-end (API logic)
-│   ├── server.js
-│   └── data/              # Server-side assets (ignored by Git)
-│
-└── ai-prompts.txt         # Logged prompts if AI assistance was used
+└── ai-prompts.txt        # Optional AI usage log
 
-🖥️ Front-End
+````
 
-All UI logic and visual components live in the client/ folder:
+---
 
-HTML structure (index.html)
+## Frontend
 
-CSS stylesheets
+The frontend is located in the `client/` directory and handles:
+- Time-slot selection and UI updates
+- Displaying availability in real time
+- Communicating with the backend API
 
-JavaScript logic (lab3.js)
+The structure allows easy migration to frameworks such as React or Angular if needed.
 
-Images & front-end assets
+---
 
-Any front-end framework components (Lab 4 additions)
+## Backend (REST API)
 
-🔌 Back-End (REST API)
+The backend is implemented in `server/server.js` and is responsible for:
+- Managing available demo slots
+- Handling signup requests
+- Validating input and preventing duplicate reservations
+- Persisting state using structured JSON data
 
-All API routes and server functionality are implemented in:
+---
 
-server/server.js
+## Running the Application
 
-
-The backend handles:
-
-Signup data
-
-GET/POST requests
-
-Validation
-
-Dynamic slot updates
-
-Data persistence via JSON files (stored in server/data/)
-
-🛠️ Running the Project
-Install dependencies
+### Install Dependencies
+```bash
 npm install
+````
 
-Start the server
+### Start the Server
+
+```bash
 node server/server.js
+```
 
-Open the front-end
+### Open the Frontend
 
-Open:
+Open the following file in your browser:
 
+```
 client/index.html
+```
 
-🤖 AI Usage Log
+---
 
-If AI tools were used during development, prompts are recorded in:
+## Validation & Reliability
 
+* Server-side validation for all signup requests
+* Protection against double booking
+* Consistent API responses
+* Clear separation between UI and business logic
+
+---
+
+## AI Usage Log
+
+If AI assistance was used during development, related prompts are recorded in:
+
+```
 ai-prompts.txt
+```
 
+This file mirrors the commit history of AI-assisted changes.
 
-This file mirrors the commit history related to AI-assisted changes.
+---
 
-🌟 Why This Project Stands Out
+## Why This Project Stands Out
 
-This application showcases real software engineering capabilities:
-
-Full-stack project structure
-
-REST API creation and integration
-
-Client–server communication
-
-Front-end dynamic behavior
-
-Data handling and validation
-
-Clean architecture and organization
-
-Deployment-ready file structure
+* Demonstrates full-stack system design
+* Clean REST API implementation
+* Real-time client–server interaction
+* Validation and state management
+* Readable, maintainable code structure
+* Reflects production-style application patterns
